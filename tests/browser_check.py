@@ -22,7 +22,8 @@ def check_page(page, viewport, screenshot_name):
     assert page.locator("h1").inner_text().replace("\n", " ") == "Gang Cheng."
     assert page.locator("#about-heading").inner_text() == "About Me"
     assert page.locator(".publication").count() == 5
-    assert page.locator("#software article").count() == 2
+    assert page.locator("#software .software-list > li").count() == 2
+    assert page.locator("a[href='https://pypi.org/project/accmv/']").count() == 2
     assert "My Ph.D. work sits at the intersection" in page.locator("#about").inner_text()
     assert "including suicide and self-injury content" in page.locator("#about").inner_text()
     assert page.locator("#contact").inner_text() == "Contact\nContact me at mathchenggang [at] gmail [dot] com."
