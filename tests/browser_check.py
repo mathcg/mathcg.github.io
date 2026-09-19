@@ -20,6 +20,7 @@ def check_page(page, viewport, screenshot_name):
     assert response and response.status == 200
     assert page.title() == "Gang Cheng — Research Scientist"
     assert page.locator("h1").inner_text().replace("\n", " ") == "Gang Cheng."
+    assert page.locator("#about-heading").inner_text() == "About Me"
     assert page.locator(".publication").count() == 5
     assert page.locator("#software article").count() == 2
     assert "My Ph.D. work sits at the intersection" in page.locator("#about").inner_text()
