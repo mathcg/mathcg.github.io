@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f4f0e6"/>
+  <g stroke="#14202a" stroke-opacity=".12"><path d="M0 90h1200M0 180h1200M0 270h1200M0 360h1200M0 450h1200M0 540h1200M100 0v630M200 0v630M300 0v630M400 0v630M500 0v630M600 0v630M700 0v630M800 0v630M900 0v630M1000 0v630M1100 0v630"/></g>
+  <circle cx="930" cy="315" r="210" fill="none" stroke="#116b68"/>
+  <circle cx="930" cy="315" r="140" fill="none" stroke="#116b68"/>
+  <text x="930" y="345" text-anchor="middle" fill="#116b68" font-family="monospace" font-size="78">GC</text>
+  <text x="90" y="270" fill="#14202a" font-family="Arial, sans-serif" font-size="96" font-weight="600">Gang Cheng</text>
+  <text x="95" y="340" fill="#116b68" font-family="monospace" font-size="30">RESEARCH SCIENTIST · META</text>
+  <text x="95" y="405" fill="#657078" font-family="Arial, sans-serif" font-size="27">Statistics · Machine Learning · Inference</text>
+</svg>
