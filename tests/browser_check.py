@@ -22,6 +22,7 @@ def check_page(page, viewport, screenshot_name):
     assert page.locator("h1").inner_text().replace("\n", " ") == "Gang Cheng."
     assert page.locator(".publication").count() == 5
     assert page.locator("#software article").count() == 2
+    assert "My Ph.D. work sits at the intersection" in page.locator("#about").inner_text()
     assert page.locator("a[href^='mailto:']").count() >= 1
     assert not errors, f"Browser errors: {errors}"
 
