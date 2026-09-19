@@ -5,7 +5,7 @@ The layout uses a compact academic masthead and profile sidebar inspired by
 the information architecture of [zhangyk8.github.io](https://zhangyk8.github.io/),
 with an original visual implementation and content.
 
-The profile photograph is Gang Cheng's University of Washington alumni portrait.
+The profile photograph is Gang Cheng's public LinkedIn portrait.
 
 ## Local preview
 
