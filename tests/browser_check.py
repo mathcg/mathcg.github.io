@@ -20,7 +20,7 @@ def check_page(page, viewport, screenshot_name):
     assert response and response.status == 200
     assert page.title() == "Gang Cheng — Research Scientist"
     assert page.locator("h1").inner_text().replace("\n", " ") == "Gang Cheng."
-    assert page.locator(".publication").count() == 3
+    assert page.locator(".publication").count() == 5
     assert page.locator("#software article").count() == 2
     assert page.locator("a[href^='mailto:']").count() >= 1
     assert not errors, f"Browser errors: {errors}"

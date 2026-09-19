@@ -41,7 +41,7 @@ a:hover { color: var(--blue-dark); }
 .layout { display: grid; grid-template-columns: minmax(150px, 16.67%) minmax(0, 1fr); gap: 4.16%; width: min(calc(100% - 2rem), var(--max-width)); margin: 2rem auto 0; padding: 0 1rem 4rem; }
 .profile { position: sticky; top: 2rem; align-self: start; opacity: .75; transition: opacity .2s ease-in-out; }
 .profile:hover { opacity: 1; }
-.profile-photo { display: block; width: 100%; max-width: 175px; height: auto; aspect-ratio: 1; padding: 5px; object-fit: cover; border: 1px solid var(--line); border-radius: 50%; }
+.profile-photo { display: block; width: 100%; max-width: 175px; height: auto; aspect-ratio: 1; padding: 5px; object-fit: cover; object-position: center top; border: 1px solid var(--line); border-radius: 50%; }
 .profile-intro h1 { margin: .65rem 0 .45rem; color: var(--heading); font-size: 1rem; line-height: 1.25; }
 .profile-intro p { margin: 0 0 .65rem; color: var(--muted); font-size: .75rem; line-height: 1.5; }
 .profile-intro .organization { color: var(--blue); font-weight: 400; }
