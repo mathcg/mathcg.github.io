@@ -25,7 +25,8 @@ def check_page(page, viewport, screenshot_name):
     assert page.locator("#software article").count() == 2
     assert "My Ph.D. work sits at the intersection" in page.locator("#about").inner_text()
     assert "including suicide and self-injury content" in page.locator("#about").inner_text()
-    assert page.locator("a[href^='mailto:']").count() >= 1
+    assert page.locator("#contact").inner_text() == "Contact\nContact me at langliu195 [at] gmail [dot] com."
+    assert page.locator("a[href='#contact']").count() >= 2
     assert not errors, f"Browser errors: {errors}"
 
     page.screenshot(path=str(OUTPUT_DIR / screenshot_name), full_page=True)
