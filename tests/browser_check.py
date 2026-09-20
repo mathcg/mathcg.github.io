@@ -26,7 +26,7 @@ def check_page(page, viewport, screenshot_name):
     assert page.locator("a[href='https://pypi.org/project/accmv/']").count() == 2
     assert "My Ph.D. work sits at the intersection" in page.locator("#about").inner_text()
     assert "including suicide and self-injury content" in page.locator("#about").inner_text()
-    assert "account compromise prevention" in page.locator("#about").inner_text()
+    assert "large language models (LLMs) to prevent account compromise" in page.locator("#about").inner_text()
     assert page.locator("#about a[href*='boosting-your-support-and-safety']").count() == 1
     assert page.locator("#contact").inner_text() == "Contact\nContact me at mathchenggang [at] gmail [dot] com."
     assert page.locator("a[href='#contact']").count() >= 2
