@@ -27,7 +27,9 @@ def check_page(page, viewport, screenshot_name):
     assert "My Ph.D. work sits at the intersection" in page.locator("#about").inner_text()
     assert "including suicide and self-injury content" in page.locator("#about").inner_text()
     assert "large language models (LLMs) to prevent account compromise" in page.locator("#about").inner_text()
-    assert page.locator("#about a[href*='boosting-your-support-and-safety']").count() == 1
+    media_link = page.locator("#about a[href*='boosting-your-support-and-safety']")
+    assert media_link.count() == 1
+    assert media_link.inner_text() == "prevent account compromise"
     assert page.locator("#contact").inner_text() == "Contact\nContact me at mathchenggang [at] gmail [dot] com."
     assert page.locator("a[href='#contact']").count() >= 2
     assert not errors, f"Browser errors: {errors}"
